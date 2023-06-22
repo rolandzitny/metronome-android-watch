@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Metronome Watch"
+        android:layout_marginBottom="150dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        >
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_marginTop="45dp"
+            android:id="@+id/scroll"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:clipToPadding="true"
+            android:fillViewport="true"
+            android:foregroundGravity="fill"
+            android:overScrollMode="never"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/main_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="60dp"
+                android:paddingTop="20dp">
+
+                <Button
+                    android:layout_gravity="center"
+                    android:gravity="left|center_vertical"
+                    android:id="@+id/play_btn"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#66C5C5C5"
+                    android:text="Play"
+                    android:drawableLeft="@drawable/ic_baseline_play_arrow_24"
+                    android:textAllCaps="false"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="20dp"/>
+
+                <Button
+                    android:layout_gravity="center"
+                    android:gravity="left|center_vertical"
+                    android:id="@+id/taptempo_btn"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#66C5C5C5"
+                    android:text="@string/tap_tempo_btn_name"
+                    android:drawableLeft="@drawable/ic_baseline_touch_app_24"
+                    android:textAllCaps="false"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="20dp"
+                    />
+
+                <Button
+                    android:layout_gravity="center"
+                    android:gravity="left|center_vertical"
+                    android:id="@+id/presets_btn"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#66C5C5C5"
+                    android:text="My Modes"
+                    android:drawableLeft="@drawable/ic_baseline_library_music_24"
+                    android:textAllCaps="false"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="20dp"/>
+
+                <Button
+                    android:layout_gravity="center"
+                    android:gravity="left|center_vertical"
+                    android:id="@+id/settings_btn"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="#66C5C5C5"
+                    android:text="@string/settings_btn_name"
+                    android:drawableLeft="@drawable/ic_baseline_settings_24"
+                    android:textAllCaps="false"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="20dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.wear.widget.BoxInsetLayout>

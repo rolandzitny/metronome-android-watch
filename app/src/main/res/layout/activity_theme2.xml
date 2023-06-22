@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/theme2_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:textAlignment="center">-->
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlBig"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/big"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_black">
+
+            <TextView
+                android:id="@+id/bpm_theme2_text"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="39dp"
+                android:fontFamily="sans-serif-black"
+                android:text="42"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="48sp" />
+
+            <TextView
+                android:id="@+id/bpmTheme2TextView"
+                android:layout_width="62dp"
+                android:layout_height="61dp"
+                android:layout_below="@+id/bpm_theme2_text"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="-35dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-black"
+                android:text="bpm"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/theme2_circle8"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circle_black" />
+
+        <RelativeLayout
+            android:id="@+id/theme2_circle2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/circle_black" />
+
+        <RelativeLayout
+            android:id="@+id/theme2_circle6"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/circle_black" />
+
+        <RelativeLayout
+            android:id="@+id/theme2_circle4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/circle_black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/theme2_circle3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-9dp"
+        android:layout_toRightOf="@+id/rlBig"
+        android:background="@drawable/circle_black" />
+
+    <RelativeLayout
+        android:id="@+id/theme2_circle7"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="-12dp"
+        android:layout_toLeftOf="@+id/rlBig"
+        android:background="@drawable/circle_black" />
+
+    <RelativeLayout
+        android:id="@+id/theme2_circle1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/rlBig"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-10dp"
+        android:background="@drawable/circle_black" />
+
+    <RelativeLayout
+        android:id="@+id/theme2_circle5"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/rlBig"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/circle_black" />
+    <ImageView
+        android:id="@+id/theme2_bkg"
+        android:layout_width="270dp"
+        android:layout_height="243dp"
+        android:background="@drawable/bkg"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/theme2_triangle"
+        android:layout_width="67dp"
+        android:layout_height="66dp"
+        android:visibility="gone"
+        android:background="@drawable/triangle"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

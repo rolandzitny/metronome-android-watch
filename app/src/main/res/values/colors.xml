@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color type="color" name="background_blue_top">#0192b3</color>
+    <color type="color" name="background_blue_bottom">#004352</color>
+    <color type="color" name="blue_light">#018fae</color>
+    <color type="color" name="theme1_rectangle_active">#c0c32a</color>
+    <color type="color" name="theme1_rectangle_inactive">#868675</color>
+    <color type="color" name="theme2_green">#1ad116</color>
+</resources>
